@@ -2,7 +2,7 @@ $(function() {
     $('#slider1').slider({
         value:12,
         min: 10,
-        max: 25,
+        max: 40,
         step: 1,
         slide: function( event, ui ) {
             $('#font_size').val(ui.value + ' px');

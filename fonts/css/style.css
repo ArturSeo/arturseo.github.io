@@ -64,7 +64,7 @@ body {
  .font{
 	color: #444;
 	text-align: left;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: rgb(61, 61, 61);
 }
 .url-text p{
@@ -79,6 +79,9 @@ body {
 	font-size: 0.6em;
 	font-family: sans-serif;
 	display: none;
+	overflow: auto;
+	z-index: 8;
+	position: relative;
 }.url-click{
 	cursor: pointer;
 	background: #dee6ec;
