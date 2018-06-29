@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <title>База шрифтов (Font Base)</title>
+    
+</head>
+<body>
+
+<!-- 
+    панель управления размером шрифта
+    -->
+<div class="fz-fixed">
+    <label for="font_size">размер шрифта:</label>
+    <input type="text" id="font_size" />
+    <div id="slider1"></div>
+</div>
+
+<div class="flex-fonts-block">
+
+<!--##### START код шрифта-->
+<div class="bg AaarghBold">
+    <p class="font_content">AaarghBold</p>
+    <div class="font">заголовок / title</div>
+    <div class="content">
+        <p>Равным образом реализация намеченных плановых заданий требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки модели развития. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui placeat aliquid debitis accusantium assumenda molestias similique quis perspiciatis necessitatibus. Corporis error quas sunt ipsum, culpa ipsam, temporibus ab architecto nulla maxime numquam nam atque voluptate pariatur! Ducimus cupiditate minus sint, voluptatum eligendi provident ab id in eos possimus cumque at.</p>
+    </div>
+
+    <div class="block-url">
+        <span class="url-click">📎</span>
+        <div class="url-text">
+            <code>
+            @font-face {
+                font-family: 'AaarghBold';
+                src: local('AaarghBold'), local('AaarghBold'), url('../fonts/Aaargh/AaarghBold/AaarghBold.ttf') format('truetype');
+            }
+            </code>
+                <p>@import url('font-face.css?family=AaarghBold');</p>
+                <p>font-family: 'AaarghBold', sans-serif;</p>
+        </div>
+    </div>
+</div>
+<!--##### END код шрифта-->
+
+<!--##### START код шрифта-->
+<div class="bg ACLine">
+        <p class="font_content">ACLine</p>
+        <div class="font">заголовок / title</div>
+        <div class="content">
+            <p>Равным образом реализация намеченных плановых заданий требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки модели развития. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui placeat aliquid debitis accusantium assumenda molestias similique quis perspiciatis necessitatibus. Corporis error quas sunt ipsum, culpa ipsam, temporibus ab architecto nulla maxime numquam nam atque voluptate pariatur! Ducimus cupiditate minus sint, voluptatum eligendi provident ab id in eos possimus cumque at.</p>
+        </div>
+    
+        <div class="block-url">
+            <span class="url-click">📎</span>
+            <div class="url-text">
+                <code>
+                @font-face {
+                    font-family: 'ACLine';
+                    src: local('ACLine'), local('ACLine'), url('../fonts/ACLine/ACLineRegular/ACLineRegular.ttf') format('truetype');
+                }
+                </code>
+                    <p>@import url('font-face.css?family=ACLine');</p>
+                    <p>font-family: 'ACLine', sans-serif;</p>
+            </div>
+        </div>
+    </div>
+    <!--##### END код шрифта-->
+
+</div>
+
+    <div class="fonts-block"></div>
+
+<script>
+$(document).ready(function() {
+    $('.block-url').on('click', '.url-click', function() {
+        $(this).toggleClass('red').siblings('.url-text').slideToggle(0);
+    });
+});
+</script>
+
+</body>
+</html>
