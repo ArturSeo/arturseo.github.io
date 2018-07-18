@@ -22,3 +22,7 @@
     font-family: 'Airport';
     src: local('AirportRegular'), local('AirportRegular'), url('../fonts/Airport/AirportRegular/AirportRegular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'AleksandraC';
+    src: local('AleksandraC'), local('AleksandraC'), url('../fonts/AleksandraC/AleksandraCRegular/AleksandraCRegular.ttf') format('truetype');
+}
